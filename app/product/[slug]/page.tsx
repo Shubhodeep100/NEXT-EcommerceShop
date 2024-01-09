@@ -1,6 +1,6 @@
 import ImageGallery from "@/app/components/ImageGallery";
 import { client } from "@/app/lib/sanity";
-
+import { fullProduct } from "@/app/interface";
 
 async function getData(slug: string) {
     const query = `*[_type == "product" && slug.current == "${slug}"][0]{
@@ -28,7 +28,7 @@ export default async function ProductPage({
         <div className="bg-white">
             <div className="mx-auto max-x-screen-xl px-4 md:px-8">
                 <div className="grid gap-8 md:grid-cols-2">
-            <ImageGallery images={data.images}/>
+                    <ImageGallery images={data.images} />
                 </div>
             </div>
 
