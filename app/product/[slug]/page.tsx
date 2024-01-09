@@ -52,8 +52,8 @@ export default async function ProductPage({
                                 <span className="text-xl font-bold text-gray-800 md:text-2xl">
                                     ${data.price}
                                 </span>
-                                <span className="mb-0.5 text-red-500 line-through">
-                                    ${data.price + 30}
+                                <span className="mb-0.5 text-red-600 line-through">
+                                    ${data.price + 20}
                                 </span>
                             </div>
                             <span className="text-sm text-gray-500">
@@ -61,9 +61,14 @@ export default async function ProductPage({
                             </span>
                         </div>
                         <div className="mb-6 flex items-center gap-2 text-gray-500">
-                        <Truck/>
-                        <span>2-4 Day Shipping</span>
+                            <Truck className="w-6 h-6" />
+                            <span className="text-sm">2-4 Day Shipping</span>
                         </div>
+                        <div className="flex gap-2.5">
+                            <Button>Add To Bag</Button>
+                            <Button variant={"secondary"}>Checkout Now</Button>
+                        </div>
+                        <p className="mt-12 text-base text-gray-500 tracking-wide">{data.description}</p>
                     </div>
                 </div>
             </div>
