@@ -29,6 +29,13 @@ export default async function ProductPage({
             <div className="mx-auto max-x-screen-xl px-4 md:px-8">
                 <div className="grid gap-8 md:grid-cols-2">
                     <ImageGallery images={data.images} />
+                    <div className="md:py-8">
+                    <div className="mb-2 md:mb-3">
+                    <span>
+                        {data.categoryName}
+                    </span>
+                    </div>
+                    </div>
                 </div>
             </div>
 
