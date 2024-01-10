@@ -70,7 +70,7 @@ export default async function ProductPage({
                         <div className="flex gap-2.5">
                             <AddToBag currency="INR" description={data.description} image={data.images[0]} name={data.name} price={data.price} price_id={data.price_id} key={data._id}/>
                             <CheckoutNow currency="INR" description={data.description} image={data.images[0]} name={data.name} price={data.price} price_id={data.price_id} key={data._id}/>
-                            <Button variant={"secondary"}>Checkout Now</Button>
+                        
                         </div>
                         <p className="mt-12 text-base text-gray-500 tracking-wide">{data.description}</p>
                     </div>
