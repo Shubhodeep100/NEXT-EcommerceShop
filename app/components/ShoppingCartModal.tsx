@@ -1,31 +1,31 @@
-import { Button } from "@/components/ui/button";
+"use client";
 import {
     Sheet,
-    SheetClose,
     SheetContent,
-    SheetDescription,
-    SheetFooter,
     SheetHeader,
     SheetTitle,
-    SheetTrigger,
 } from "@/components/ui/sheet"
+import { useShoppingCart } from "use-shopping-cart";
 export default function ShoppingCartModal() {
+    const { cartCount } = useShoppingCart()
     return (
-        <Sheet>
+        <Sheet defaultOpen>
 
-            <SheetContent>
+            <SheetContent className="sm:max-w-lg w-[90vw]">
                 <SheetHeader>
-                    <SheetTitle>Edit profile</SheetTitle>
-                    <SheetDescription>
-                        Make changes to your profile here. Click save when you're done.
-                    </SheetDescription>
-                </SheetHeader>
+                    <SheetTitle>Shopping Cart</SheetTitle>
 
-                <SheetFooter>
-                    <SheetClose asChild>
-                        <Button type="submit">Save changes</Button>
-                    </SheetClose>
-                </SheetFooter>
+                </SheetHeader>
+                <div className="h-full flex flex-col justify-between ">
+                    <div className="mt-8 flex-1 overflow-y-auto">
+                        <ul className="-my-6 divide-y divide-gray-200">
+                            {cartCount === 0 ? (<h1 className="py-6">You dont have any items</h1>) : (
+                                <h1 >Hey! You have some items.</h1>
+                            )}
+                        </ul>
+                    </div>
+
+                </div>
             </SheetContent>
         </Sheet>
     )
