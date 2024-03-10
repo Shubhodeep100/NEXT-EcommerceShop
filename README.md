@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Funky Fashionair
 
-First, run the development server:
+🚀
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+•Full Stack Ecommerce app with all the modern integrated features.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+•Integrated Stripe-payment checkout feature for the products.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+•Implemented Sanity CMS for convenient product management.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+•Deployed via Vercel deployments.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Demo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://next-ecommerce-shop-rho.vercel.app/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Screenshots
 
-## Deploy on Vercel
+![Screenshot 2024-03-11 003943](https://github.com/Shubhodeep100/NEXT-EcommerceShop/assets/96099026/27e59461-513d-49df-a79f-88f33d453a02)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Screenshot 2024-03-11 002150](https://github.com/Shubhodeep100/NEXT-EcommerceShop/assets/96099026/4671e154-94b0-4518-a139-80b89c5e0df8)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Screenshot 2024-03-11 003754](https://github.com/Shubhodeep100/NEXT-EcommerceShop/assets/96099026/577e2174-cbf3-49ed-9edb-9c369d424059)
+
+
+
+## Tech Stack Used
+
+**Client:** ReactJs, NEXTjs, TypeScript, TailwindCSS, Shadcn/UI
+
+**Server & database:** Sanity
+
+**Payment:** Stripe
+
+## Features
+
+- Dynamic products routes.
+- Add data to SanityCMS.
+- Place order.
+- Payment via Stripe payments.
+
