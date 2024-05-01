@@ -14,7 +14,7 @@
 
 ## Demo
 
-https://next-ecommerce-shop-rho.vercel.app/
+[Demo](https://next-ecommerce-shop-rho.vercel.app/)
 
 ## Screenshots
 
